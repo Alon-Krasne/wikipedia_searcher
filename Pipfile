@@ -8,7 +8,6 @@ fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
 wikipedia = "*"
-fastapi-cache2 = "*"
 
 [dev-packages]
 
