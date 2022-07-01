@@ -2,11 +2,11 @@ import logging
 
 import pydantic
 import wikipedia.exceptions
-from fastapi import FastAPI, Request, Depends, Body, status
+from fastapi import FastAPI, Depends, status
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-from wiki_searcher.wikipedia_service import get_wikipedia_page, get_disambiguation_options
+from wiki_searcher.wikipedia_service import get_wikipedia_page
 
 logger = logging.getLogger('wikiSearcher')
 
@@ -26,6 +26,7 @@ class SearchWikiRequest(BaseModel):
         if v <= 0:
             raise ValueError('Limit must be positive')
         return v
+
 
 @app.get('/')
 async def hello():
