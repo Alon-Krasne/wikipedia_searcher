@@ -8,6 +8,6 @@ services:
 
     container_name: wiki_searcher
     ports:
-      - "3000:3000"
+      - "8000:8000"
 
     command: "pipenv run wiki_searcher"
