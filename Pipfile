@@ -8,6 +8,7 @@ fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
 wikipedia = "*"
+pytest = "*"
 
 [dev-packages]
 
@@ -16,3 +17,4 @@ python_version = "3.10"
 
 [scripts]
 wiki_searcher = "python -m wiki_searcher"
+tests = "python -m pytest -s"
