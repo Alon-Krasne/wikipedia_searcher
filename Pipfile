@@ -10,8 +10,6 @@ pydantic = "*"
 wikipedia = "*"
 
 [dev-packages]
-coverage-badge = "*"
-coverage = "*"
 pytest = "*"
 flake8 = "*"
 
@@ -23,4 +21,3 @@ wiki_searcher = "python -m wiki_searcher"
 lint_syntax = "python -m flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics"
 lint_warnings = "python -m flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics"
 tests = "python -m pytest -s"
-tests_with_coverage = "python -m coverage run --data-file=./.github/coverage/.coverage -m pytest"
