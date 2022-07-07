@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 class SearchWikiRequest(BaseModel):
     phrase: str
-    limit: int
+    limit: int = 1
 
     @pydantic.validator('limit')
     def validate_limit_is_positive(cls, v):
