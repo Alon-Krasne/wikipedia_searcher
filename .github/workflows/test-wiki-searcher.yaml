@@ -31,6 +31,6 @@ jobs:
       run: |
         python -m pipenv run lint_syntax
         python -m pipenv run lint_warnings
-    - name: Test with pytest and get coverage
+    - name: Test with pytest
       run: |
         python -m pipenv run tests
