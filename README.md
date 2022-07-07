@@ -1,4 +1,5 @@
 # Wikipedia Searcher
+![build](https://github.com/AlonKrasne/wikipedia_searcher/blob/main/.github/workflows/test-wiki-searcher.yaml/badge.svg)
 
 ## Running
 To run the project, use [pipenv](https://pipenv.pypa.io/en/latest/):
