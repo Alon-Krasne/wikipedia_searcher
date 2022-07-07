@@ -26,11 +26,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install pipenv
-        python -m pipenv install
+        python -m pipenv install --dev
     - name: Lint with flake8
       run: |
         python -m pipenv run lint_syntax
         python -m pipenv run lint_warnings
-    - name: Test with pytest
+    - name: Test with pytest and get coverage
       run: |
-        python -m pipenv run tests
+        export COVERAGE_FILE="./.github/coverage/.coverage"
+        python -m pipenv run tests_with_coverage
+        cd .github/coverage && python -m pipenv run coverage-badge -o ./.github/coverage/coverage.svg
