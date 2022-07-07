@@ -33,6 +33,5 @@ jobs:
         python -m pipenv run lint_warnings
     - name: Test with pytest and get coverage
       run: |
-        export COVERAGE_FILE="./.github/coverage/.coverage"
         python -m pipenv run tests_with_coverage
         cd .github/coverage && python -m pipenv run coverage-badge -o ./.github/coverage/coverage.svg

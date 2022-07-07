@@ -1,3 +1,4 @@
 .idea
 __pycache__
 wiki_searcher/__pycache__
+.github/coverage
