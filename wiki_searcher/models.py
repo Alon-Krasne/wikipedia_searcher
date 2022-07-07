@@ -1,5 +1,3 @@
-from json import JSONEncoder
-
 import pydantic
 from pydantic import BaseModel
 
